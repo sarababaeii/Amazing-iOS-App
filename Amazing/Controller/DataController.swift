@@ -134,6 +134,12 @@ class DataController {
         }
     }
     
+    func count(logs: [NSManagedObject], emotion: Emotion) -> Int {
+        return logs.filter{ (log) -> Bool in
+            return (log as! Mood).emotion == emotion.rawValue
+        }.count
+    }
+    
     func creatDummyLogsFor(days: Int) {
         deleteAll()
         for i in 0 ..< days {
