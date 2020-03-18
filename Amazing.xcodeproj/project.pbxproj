@@ -16,7 +16,40 @@
 		03BEDCA924217FDA00DED3D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03BEDCA824217FDA00DED3D9 /* Assets.xcassets */; };
 		03BEDCAC24217FDA00DED3D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03BEDCAA24217FDA00DED3D9 /* LaunchScreen.storyboard */; };
 		03BEDCB724218FEA00DED3D9 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BEDCB624218FEA00DED3D9 /* DataController.swift */; };
+		03EADD8624227DF20032A7BD /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03EADD8024227D560032A7BD /* Charts.framework */; };
+		03EADD8724227DF20032A7BD /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 03EADD8024227D560032A7BD /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		03EADD7F24227D560032A7BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03EADD7A24227D550032A7BD /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 65AD9E95D9ED4DC0BD73A743;
+			remoteInfo = Charts;
+		};
+		03EADD8124227D560032A7BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03EADD7A24227D550032A7BD /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1CBBC58C6CE1EBEE9852CE41;
+			remoteInfo = ChartsTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		03EADD8824227DF20032A7BD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				03EADD8724227DF20032A7BD /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		03580F3E2422550A00DC3FD7 /* AnalyticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsViewController.swift; sourceTree = "<group>"; };
@@ -30,6 +63,7 @@
 		03BEDCAB24217FDA00DED3D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03BEDCAD24217FDA00DED3D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03BEDCB624218FEA00DED3D9 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		03EADD7A24227D550032A7BD /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../../../../../Downloads/Charts-master/Charts.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03EADD8624227DF20032A7BD /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,8 +81,10 @@
 		03BEDC9024217FD900DED3D9 = {
 			isa = PBXGroup;
 			children = (
+				03EADD7A24227D550032A7BD /* Charts.xcodeproj */,
 				03BEDC9B24217FD900DED3D9 /* Amazing */,
 				03BEDC9A24217FD900DED3D9 /* Products */,
+				03EADD7724227C520032A7BD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +137,22 @@
 			name = "Supporting files";
 			sourceTree = "<group>";
 		};
+		03EADD7724227C520032A7BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		03EADD7B24227D550032A7BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03EADD8024227D560032A7BD /* Charts.framework */,
+				03EADD8224227D560032A7BD /* ChartsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -110,12 +163,15 @@
 				03BEDC9524217FD900DED3D9 /* Sources */,
 				03BEDC9624217FD900DED3D9 /* Frameworks */,
 				03BEDC9724217FD900DED3D9 /* Resources */,
+				03EADD8824227DF20032A7BD /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Amazing;
+			packageProductDependencies = (
+			);
 			productName = Amazing;
 			productReference = 03BEDC9924217FD900DED3D9 /* Amazing.app */;
 			productType = "com.apple.product-type.application";
@@ -146,12 +202,35 @@
 			mainGroup = 03BEDC9024217FD900DED3D9;
 			productRefGroup = 03BEDC9A24217FD900DED3D9 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 03EADD7B24227D550032A7BD /* Products */;
+					ProjectRef = 03EADD7A24227D550032A7BD /* Charts.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				03BEDC9824217FD900DED3D9 /* Amazing */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		03EADD8024227D560032A7BD /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = 03EADD7F24227D560032A7BD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		03EADD8224227D560032A7BD /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = 03EADD8124227D560032A7BD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		03BEDC9724217FD900DED3D9 /* Resources */ = {
@@ -322,6 +401,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.0.1;
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 3QN7DG53LR;
 				INFOPLIST_FILE = Amazing/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
@@ -342,6 +422,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.0.1;
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 3QN7DG53LR;
 				INFOPLIST_FILE = Amazing/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;

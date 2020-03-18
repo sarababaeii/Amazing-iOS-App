@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import Charts
 
 class AnalyticsViewController: UIViewController {
     override func viewDidLoad() {
