@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YN5-a9-0tx">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Analytics-->
+        <scene sceneID="hMa-sC-OuH">
+            <objects>
+                <viewController id="9gF-bq-Pcp" customClass="AnalyticsViewController" customModule="Amazing" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ylO-y8-dfV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="hKe-Te-mrp"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Analytics" image="Analytics" selectedImage="Analytics" id="0qu-yc-Nid"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mYM-1n-z4z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1078" y="868"/>
+        </scene>
+        <!--Emotions-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="EmotionsViewController" customModule="Amazing" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make it Amazing!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FZ7-B5-l11">
+                                <rect key="frame" x="161.5" y="44" width="277" height="42"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="36"/>
+                                <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="koZ-0w-KU9">
+                                <rect key="frame" x="60" y="146" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="bGU-lo-5r1"/>
+                                    <constraint firstAttribute="height" constant="80" id="c2S-4e-oPd"/>
+                                </constraints>
+                                <state key="normal" image="Happy">
+                                    <attributedString key="attributedTitle"/>
+                                </state>
+                                <connections>
+                                    <action selector="moodButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vps-GP-ut1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tSd-eh-f4N">
+                                <rect key="frame" x="460" y="146" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="Etf-Hy-Fwe"/>
+                                    <constraint firstAttribute="height" constant="80" id="rg9-hw-sRA"/>
+                                </constraints>
+                                <state key="normal" image="Sad">
+                                    <attributedString key="attributedTitle"/>
+                                </state>
+                                <connections>
+                                    <action selector="moodButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r2y-bz-MKt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BHt-I4-0ba">
+                                <rect key="frame" x="260" y="250" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="MC2-MV-sOB"/>
+                                    <constraint firstAttribute="width" constant="80" id="V0F-pJ-9dh"/>
+                                </constraints>
+                                <state key="normal" image="Alright">
+                                    <attributedString key="attributedTitle"/>
+                                </state>
+                                <connections>
+                                    <action selector="moodButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1vc-p9-kqg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Snoozing..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bcd-kY-muF">
+                                <rect key="frame" x="161.5" y="299" width="277" height="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pCU-jA-Kyp">
+                                <rect key="frame" x="260" y="343" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Yw5-7F-0ez"/>
+                                    <constraint firstAttribute="width" constant="80" id="Z3F-ZC-c7J"/>
+                                </constraints>
+                                <state key="normal" image="Snooz">
+                                    <attributedString key="attributedTitle"/>
+                                </state>
+                                <connections>
+                                    <action selector="moodButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mce-Lr-cZL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="BHt-I4-0ba" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0rW-QQ-OOz"/>
+                            <constraint firstItem="Bcd-kY-muF" firstAttribute="leading" secondItem="FZ7-B5-l11" secondAttribute="leading" id="3gm-VR-ZGv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tSd-eh-f4N" secondAttribute="trailing" constant="60" id="75Y-0S-k8K"/>
+                            <constraint firstItem="FZ7-B5-l11" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7pm-J6-zfA"/>
+                            <constraint firstItem="koZ-0w-KU9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="Kwp-5U-zCP"/>
+                            <constraint firstItem="pCU-jA-Kyp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UR2-sU-PgU"/>
+                            <constraint firstItem="pCU-jA-Kyp" firstAttribute="top" secondItem="Bcd-kY-muF" secondAttribute="bottom" constant="24" id="Xef-cT-Yee"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pCU-jA-Kyp" secondAttribute="bottom" constant="128" id="cng-ou-e3H"/>
+                            <constraint firstItem="FZ7-B5-l11" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="44" id="fOo-2Q-a06"/>
+                            <constraint firstItem="tSd-eh-f4N" firstAttribute="top" secondItem="koZ-0w-KU9" secondAttribute="top" id="iwm-cM-DZF"/>
+                            <constraint firstItem="Bcd-kY-muF" firstAttribute="trailing" secondItem="FZ7-B5-l11" secondAttribute="trailing" id="qb7-8a-x4a"/>
+                            <constraint firstItem="BHt-I4-0ba" firstAttribute="top" secondItem="FZ7-B5-l11" secondAttribute="bottom" constant="164" id="rRT-ST-ghU"/>
+                            <constraint firstItem="koZ-0w-KU9" firstAttribute="top" secondItem="FZ7-B5-l11" secondAttribute="bottom" constant="60" id="tWr-Ku-VeH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Emotions" image="Emotions" selectedImage="Emotions" id="4Z9-CC-baG"/>
+                    <connections>
+                        <outlet property="happyButton" destination="koZ-0w-KU9" id="Yax-Zu-7Tg"/>
+                        <outlet property="moodLabel" destination="Bcd-kY-muF" id="dxN-iH-iHE"/>
+                        <outlet property="neutralButton" destination="BHt-I4-0ba" id="lTK-LC-1X9"/>
+                        <outlet property="sadButton" destination="tSd-eh-f4N" id="p5Z-Ka-a1o"/>
+                        <outlet property="snoozButton" destination="0rW-QQ-OOz" id="6Pl-Bl-V9U"/>
+                        <outlet property="titleLabel" destination="FZ7-B5-l11" id="oZX-af-W2j"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1077.5999999999999" y="115.59220389805098"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="OIO-2H-Oic">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="YN5-a9-0tx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="w2L-sn-Czg">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="fhW-EN-2Uz"/>
+                        <segue destination="9gF-bq-Pcp" kind="relationship" relationship="viewControllers" id="Y1D-qP-Ujh"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JXZ-Gk-eOs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.40000000000001" y="115.59220389805098"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Alright" width="96" height="96"/>
+        <image name="Analytics" width="25" height="25"/>
+        <image name="Emotions" width="25" height="25"/>
+        <image name="Happy" width="96" height="96"/>
+        <image name="Sad" width="96" height="96"/>
+        <image name="Snooz" width="96" height="96"/>
+    </resources>
+</document>

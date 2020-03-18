@@ -1,20 +1,17 @@
 //
-//  ViewController.swift
+//  AnalyticsViewController.swift
 //  Amazing
 //
 //  Created by Sara Babaei on 3/18/20.
 //  Copyright © 2020 Sara Babaei. All rights reserved.
 //
 
+import Foundation
 import UIKit
 
-class ViewController: UIViewController {
-
+class AnalyticsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        //Do any additional setup after loading the view, typically from a nib
     }
-
-
 }
-

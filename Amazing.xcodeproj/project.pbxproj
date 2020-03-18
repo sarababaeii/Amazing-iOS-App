@@ -7,25 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03580F3F2422550A00DC3FD7 /* AnalyticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03580F3E2422550A00DC3FD7 /* AnalyticsViewController.swift */; };
 		03BEDC9D24217FD900DED3D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BEDC9C24217FD900DED3D9 /* AppDelegate.swift */; };
 		03BEDC9F24217FD900DED3D9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BEDC9E24217FD900DED3D9 /* SceneDelegate.swift */; };
-		03BEDCA124217FD900DED3D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BEDCA024217FD900DED3D9 /* ViewController.swift */; };
+		03BEDCA124217FD900DED3D9 /* EmotionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BEDCA024217FD900DED3D9 /* EmotionsViewController.swift */; };
 		03BEDCA424217FD900DED3D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03BEDCA224217FD900DED3D9 /* Main.storyboard */; };
 		03BEDCA724217FD900DED3D9 /* Amazing.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 03BEDCA524217FD900DED3D9 /* Amazing.xcdatamodeld */; };
 		03BEDCA924217FDA00DED3D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03BEDCA824217FDA00DED3D9 /* Assets.xcassets */; };
 		03BEDCAC24217FDA00DED3D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03BEDCAA24217FDA00DED3D9 /* LaunchScreen.storyboard */; };
+		03BEDCB724218FEA00DED3D9 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BEDCB624218FEA00DED3D9 /* DataController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03580F3E2422550A00DC3FD7 /* AnalyticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsViewController.swift; sourceTree = "<group>"; };
 		03BEDC9924217FD900DED3D9 /* Amazing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Amazing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03BEDC9C24217FD900DED3D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03BEDC9E24217FD900DED3D9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		03BEDCA024217FD900DED3D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		03BEDCA024217FD900DED3D9 /* EmotionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionsViewController.swift; sourceTree = "<group>"; };
 		03BEDCA324217FD900DED3D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		03BEDCA624217FD900DED3D9 /* Amazing.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Amazing.xcdatamodel; sourceTree = "<group>"; };
 		03BEDCA824217FDA00DED3D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03BEDCAB24217FDA00DED3D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03BEDCAD24217FDA00DED3D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03BEDCB624218FEA00DED3D9 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +62,42 @@
 		03BEDC9B24217FD900DED3D9 /* Amazing */ = {
 			isa = PBXGroup;
 			children = (
+				03BEDCB4242181BA00DED3D9 /* View */,
+				03BEDCB3242181AA00DED3D9 /* Controller */,
+				03BEDCB5242181CF00DED3D9 /* Supporting files */,
+			);
+			path = Amazing;
+			sourceTree = "<group>";
+		};
+		03BEDCB3242181AA00DED3D9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				03BEDCA024217FD900DED3D9 /* EmotionsViewController.swift */,
+				03BEDCB624218FEA00DED3D9 /* DataController.swift */,
+				03580F3E2422550A00DC3FD7 /* AnalyticsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		03BEDCB4242181BA00DED3D9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				03BEDCA224217FD900DED3D9 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		03BEDCB5242181CF00DED3D9 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
 				03BEDC9C24217FD900DED3D9 /* AppDelegate.swift */,
 				03BEDC9E24217FD900DED3D9 /* SceneDelegate.swift */,
-				03BEDCA024217FD900DED3D9 /* ViewController.swift */,
-				03BEDCA224217FD900DED3D9 /* Main.storyboard */,
 				03BEDCA824217FDA00DED3D9 /* Assets.xcassets */,
 				03BEDCAA24217FDA00DED3D9 /* LaunchScreen.storyboard */,
 				03BEDCAD24217FDA00DED3D9 /* Info.plist */,
 				03BEDCA524217FD900DED3D9 /* Amazing.xcdatamodeld */,
 			);
-			path = Amazing;
+			name = "Supporting files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,10 +171,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03BEDCA124217FD900DED3D9 /* ViewController.swift in Sources */,
+				03BEDCB724218FEA00DED3D9 /* DataController.swift in Sources */,
+				03BEDCA124217FD900DED3D9 /* EmotionsViewController.swift in Sources */,
 				03BEDC9D24217FD900DED3D9 /* AppDelegate.swift in Sources */,
 				03BEDC9F24217FD900DED3D9 /* SceneDelegate.swift in Sources */,
 				03BEDCA724217FD900DED3D9 /* Amazing.xcdatamodeld in Sources */,
+				03580F3F2422550A00DC3FD7 /* AnalyticsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,13 +321,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.1;
 				DEVELOPMENT_TEAM = 3QN7DG53LR;
 				INFOPLIST_FILE = Amazing/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.Amazing;
+				PRODUCT_BUNDLE_IDENTIFIER = org.aut.Amazing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -307,13 +341,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.1;
 				DEVELOPMENT_TEAM = 3QN7DG53LR;
 				INFOPLIST_FILE = Amazing/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.Amazing;
+				PRODUCT_BUNDLE_IDENTIFIER = org.aut.Amazing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
